@@ -83,7 +83,7 @@ button[type="submit"]:hover {
 #statusMessage {
   margin-top: 20px;
   font-size: 15px;
-  color: green;
+  color: rgb(255, 255, 255);
 }
 
 .actions {
@@ -96,7 +96,7 @@ button[type="submit"]:hover {
 
 .action-btn {
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #71ace2;
   color: white;
   padding: 10px 18px;
   border-radius: 6px;

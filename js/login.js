@@ -15,7 +15,7 @@ function handleGoogleLogin(response) {
   localStorage.setItem("users", JSON.stringify(users));
   localStorage.setItem("currentUser", email);
   localStorage.setItem("user", JSON.stringify(data)); 
-  window.location.href = "index.html";
+  window.location.href = "index1.html";
 }
 
 let isSignup = false;
@@ -46,12 +46,12 @@ document.getElementById("authForm").addEventListener("submit", function (e) {
       };
       localStorage.setItem("users", JSON.stringify(users));
       localStorage.setItem("currentUser", email);
-      window.location.href = "index.html";
+      window.location.href = "index1.html";
     }
   } else {
     if (users[email] && users[email].password === password) {
       localStorage.setItem("currentUser", email);
-      window.location.href = "index.html";
+      window.location.href = "index1.html";
     } else {
       document.getElementById("statusMsg").textContent = "Invalid credentials!";
     }
