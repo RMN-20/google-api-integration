@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeFlip - Flip a Card</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">CodeFlip</div>
+    <nav>
+      <a href="submit.html" class="nav-link"><i class="fas fa-upload"></i> Submit</a>
+      <a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Flip a Card to Get a Coding Challenge</h1>
+    <p>Select one card to reveal your coding task. You can reshuffle if you want a new one!</p>
+
+    <div class="card-grid">
+      <div class="card" data-index="0">
+        <div class="inner">
+          <div class="front">❓</div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="card" data-index="1">
+        <div class="inner">
+          <div class="front">❓</div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="card" data-index="2">
+        <div class="inner">
+          <div class="front">❓</div>
+          <div class="back"></div>
+        </div>
+      </div>
+    </div>
+
+    <button id="reshuffleBtn"><i class="fas fa-random"></i> Reshuffle</button>
+
+    <div id="completedBox">
+      <h3>✅ Your Completed Challenges</h3>
+      <ul id="completedList"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 CodeSpin | Built with ❤️ by RM</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

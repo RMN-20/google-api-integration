@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f8d272, #f1c039);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 40px;
+   background-color:rgba(31, 34, 34, 0.747);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.challenge-box {
+  background-color: #ffffff;
+  color: #2e7d32;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  border: 1px dashed #00e60bfa;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fdf6f6;
+  text-align: left;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform: scale(1.1);
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #388E3C;
+}
+
+#statusMessage {
+  margin-top: 20px;
+  font-size: 15px;
+  color: green;
+}
+
+.actions {
+  display: none;
+  margin-top: 25px;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #1565C0;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  background-color: #d44040 ;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color:#f08e8c;
+}

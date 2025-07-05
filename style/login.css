@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fceabb, #f1c039);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-card {
+  background-color:rgba(31, 34, 34, 0.747);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: gold;
+}
+
+.login-card p {
+  color: white;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.google-section {
+  margin-bottom: 20px;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 12px;
+  color: #888;
+  font-size: 13px;
+  position: relative;
+  z-index: 2;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: #ccc;
+  z-index: 1;
+}
+
+.form-section input[type="email"],
+.form-section input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-section input:focus {
+  outline: none;
+  border-color: #4FC3F7;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #1976D2;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1565C0;
+}
+
+#toggleText {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.toggle-link {
+  color: #6caef0;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#statusMsg {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}

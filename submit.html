@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Challenge | CodeFlip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/submit.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Your Completed Challenge</h1>
+
+    <div id="challengeText" class="challenge-box">Loading challenge...</div>
+
+    <form id="uploadForm">
+      <label for="fileInput">Upload your code (.txt or .pdf):</label>
+      <input type="file" id="fileInput" accept=".txt, .pdf" required />
+
+      <div class="g-recaptcha" data-sitekey="6LftSXYrAAAAAAL0_4U80dwu5P6ouGNuKARxXYHJ"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="statusMessage"></div>
+
+    <div id="afterActions" class="actions">
+      <a href="index.html" class="action-btn">Choose Another Challenge</a>
+    </div>
+
+    <button onclick="logout()" class="logout-btn">Logout</button>
+  </div>
+
+  <script src="js/submit.js"></script>
+</body>
+</html>
